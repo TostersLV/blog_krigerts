@@ -13,13 +13,13 @@ class Database {
         $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     }
  
-    public function query($sql){
+    public function query($sql, $params){
         //Data source name
        
         // sagatavot vaicajumu
         $statement = $this->pdo->prepare($sql);
         // izpildit vaicajumu
-        $statement->execute();
+        $statement->execute($params);
         return $statement;
     }
 }
