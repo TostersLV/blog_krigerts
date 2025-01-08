@@ -20,18 +20,4 @@ if (isset($_GET["search_query"]) && $_GET["search_query"] != "") {
 
 $posts = $db->query($sql, $params)->fetchAll();
 
-
-
-echo "hi<br>";
-echo "  <form >
-        <input type='text' name='search_query'>
-        <button> Meklet </button>
-        </form>";
-
-
-echo "<ul>";
-foreach($posts as $post){
-    echo "<li>" . $post["content"] . "</li>";
-
-};
-echo "</ul>";
+require "views/index.view.php";

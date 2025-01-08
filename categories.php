@@ -21,18 +21,6 @@ if (isset($_GET["search_query"]) && $_GET["search_query"] != "") {
 
 $categories = $db->query($sql, $params)->fetchAll();
 
-echo "<h1> Kategorijas: </h1> <br>";
-
-echo "hi<br>";
-echo "  <form >
-        <input type='text' name='search_query'>
-        <button> Meklet </button>
-        </form>";
 
 
-echo "<ul>";
-foreach($categories as $category){
-    echo "<li>" . $category["category_name"] . "</li>";
-
-};
-echo "</ul>";
+require "views/categories.view.php";
