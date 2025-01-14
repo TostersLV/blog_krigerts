@@ -1,4 +1,5 @@
 <?php
+$style = "css/style.css";
 
 $sql = "SELECT * FROM posts";
 $params = [];

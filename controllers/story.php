@@ -1,5 +1,5 @@
 <?php 
-
+$style = "css/navbar.css";
 
 $title = "Labas dienas";
 $pageTitle = "Story";
