@@ -1,4 +1,5 @@
 <?php
+$navbar = "css/navbar.css";
 $style = "css/style.css";
 
 $sql = "SELECT * FROM posts";
@@ -15,4 +16,4 @@ $posts = $db->query($sql, $params)->fetchAll();
 
 $pageTitle = "Blog";
 
-require "views/index.view.php";
+require "views/posts/index.view.php";

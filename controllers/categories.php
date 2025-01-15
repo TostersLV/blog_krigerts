@@ -1,5 +1,6 @@
 <?php 
 
+$navbar = "css/navbar.css";
 
 $sql = "SELECT * FROM categories";
 $params = [];
