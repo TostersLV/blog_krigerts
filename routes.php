@@ -5,4 +5,5 @@ return [
   "/create" => "controllers/posts/create.php",
   "/show" => "controllers/posts/show.php",
   "/about"  => "controllers/story.php",
+  "/edit" => "controllers/posts/edit.php",
 ];
