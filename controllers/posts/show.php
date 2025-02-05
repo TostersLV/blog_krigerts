@@ -12,4 +12,5 @@ if(!$post){
     redirectIfNotFound();
 }
 
+
 require "views/posts/show.view.php";

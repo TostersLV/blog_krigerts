@@ -6,4 +6,5 @@ return [
   "/show" => "controllers/posts/show.php",
   "/about"  => "controllers/story.php",
   "/edit" => "controllers/posts/edit.php",
+  "/delete" => "controllers/posts/delete.php",
 ];

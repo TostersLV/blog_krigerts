@@ -2,8 +2,6 @@
 
 require "Validator.php";
 
-
-
 $navbar = "css/navbar.css";
 $style = "css/create.css";
 $pageTitle = "create";
@@ -20,7 +18,7 @@ if(!Validator::string($_POST["content"], max: 50)){
 if (empty($errors)) {
         $sql = "INSERT INTO posts(content) VALUES (:content)";
         $params = ["content" => $_POST["content"]];
-        $post = $db->query($sql, $params);
+        $db->query($sql, $params);
         header("Location: /"); 
         exit();
         }

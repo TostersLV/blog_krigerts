@@ -12,7 +12,8 @@ class Validator {
         $value = trim($value);
 
         return is_numeric($value) 
-        && strlen($value) >= $min
-        && strlen($value) <= $max;
+        && $value >= $min
+        && $value <= $max;
     }
+    
 }

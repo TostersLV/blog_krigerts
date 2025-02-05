@@ -4,6 +4,14 @@
 
 <h1> <?=  htmlspecialchars($post["content"]) ?></h1>
 
-<a href=" edit?id=<?= $post["id"]?> "> <?=   htmlspecialchars($post["content"]) ?>  </a>
+<label>rediget: </label><a href=" edit?id=<?= $post["id"]?> "> <?=   htmlspecialchars($post["content"]) ?>  </a>
 
-    <?php require "views/components/footer.php";?>
+    
+
+<form method="POST" action="/delete"> 
+    
+    <input name="id" type="hidden" value="<?= $post["id"] ?? ""?>">
+    <button type="submit"> Delete</button>
+</form>
+
+<?php require "views/components/footer.php";?>

@@ -4,7 +4,7 @@
 
 <p>cau </p>
     <form >
-    <input type='text' name='search_query value='<?= $_GET["search_query"] ?? ""?>'>
+    <input type='text' name='search_query' value='<?= $_GET["search_query"] ?? ""?>'>
     <button> Meklet </button>
     </form>
 
